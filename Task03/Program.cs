@@ -4,7 +4,7 @@
 5 -> Пятница*/
 
 Console.WriteLine("Введите число в диапазоне от 1 до 7:");
-string number = (Console.ReadLine());
+string number = Console.ReadLine();
 if (number == "1") Console.WriteLine("понедельник");
 else if (number == "2") Console.WriteLine("вторник");
 else if (number == "3") Console.WriteLine("среда");
