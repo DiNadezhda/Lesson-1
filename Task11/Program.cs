@@ -15,4 +15,3 @@ int thirdDigit = number % 10;
 int result = firstDigit * 10 + thirdDigit;
 
 Console.WriteLine($"Результат -> {result}");
-
