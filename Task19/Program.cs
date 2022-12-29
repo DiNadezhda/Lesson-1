@@ -10,9 +10,6 @@
 Console.WriteLine("Введите пятизначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-
-
-
 if (number >= 10000 && number < 100000) // проверка на 5-значность
 {
     Console.Write($"{number} -> ");
