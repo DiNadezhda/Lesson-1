@@ -10,7 +10,7 @@ Console.Write("Y: ");
 int y = Convert.ToInt32(Console.ReadLine());
 
 int quarter = Quarter(x, y);
-string result = quarter >0 
+string result = quarter > 0
                 ? $"Указанные координаты соответствуют четверти -> {quarter}"
                 : "Введены некорректные координаты";
 Console.WriteLine(result);
