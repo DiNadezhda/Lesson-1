@@ -10,7 +10,7 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 if (number < 100)  Console.WriteLine("Третьей цифры нет");
 else if (number >= 100 && number < 1000) Console.WriteLine($"Третья цифра -> {ThirdDigit(number)}");
-else if (number >= 1000) Console.WriteLine(ThirdDigit(ToThree(number)));
+else if (number >= 1000) Console.WriteLine($"Третья цифра -> {ThirdDigit(ToThree(number))}");
     
     
 int ToThree (int numM) // numM больше 1000
