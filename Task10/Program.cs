@@ -7,3 +7,10 @@
 782 -> 8
 918 -> 1*/
 
+Console.WriteLine("Введите трёхзначное число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+int number1 = number / 10;
+int result = number1 % 10;
+
+Console.WriteLine($"Вторая цифра этого числа -> {result}");
