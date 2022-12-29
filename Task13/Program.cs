@@ -15,7 +15,7 @@ else if (number > 1000) Console.WriteLine(ThirdDigit(ToThree(number)));
     
 int ToThree (int numM, int count = 0) // numM больше 1000
    {
-    while (numM < 1000) 
+    while (numM > 1000) 
     {
         numM = numM / 10;
         count++;
