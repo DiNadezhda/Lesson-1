@@ -10,8 +10,6 @@ int minNumber = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите максимальное число массива");
 int maxNumber = Convert.ToInt32(Console.ReadLine());
 
-//int[] array = new int[8];
-
 int[] array = CreateArray(8, minNumber, maxNumber);
 PrintArray(array, 8);
 
