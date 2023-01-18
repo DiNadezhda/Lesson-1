@@ -13,7 +13,7 @@
 int[] array = CreateArrayRndInt(123, -100, 100);
 PrintArray(array);
 int countElements = CountElements(array);
-Console.WriteLine(countElements);
+Console.WriteLine($" -> {countElements}");
 
 
 //Метод, сздающий массив
@@ -41,7 +41,7 @@ void PrintArray(int[] arr)
 }
 
 //Метод подсчёта двузначных элементов в заданном массиве
-int[] CountElements(int[] arr, int min = 10, int max = 99)
+int CountElements(int[] arr, int min = 10, int max = 99)
 {
     int count = 0;
     for (int i = 0; i < arr.Length; i++)
