@@ -62,3 +62,22 @@ int sumNegative = GetSumNegativElem(array);
 
 Console.WriteLine($"Сумма положительных элементов = {sumPositive}");
 Console.WriteLine($"Сумма отрицательных элементов = {sumNegative}");
+
+
+//Метод, возвращающий одновременно сумму отрицательных и положительных элментов массива
+
+// int[] GetSumPositiveNegativeElem(int[] arr)
+// {
+//     int sumNeg = 0;
+//     int sumPos = 0;
+//     for (int i = 0; i < arr.Length; i++)
+//     {
+//         if (arr[i] > 0) sumPos += arr[i];
+//         else if (arr[i] < 0) sumNeg += arr[i];
+//     }
+//     return new[]{sumPos, sumNeg};
+// }
+// //Вызов метода
+// int[] sumPositiveNegative = GetSumPositiveNegativeElem(array);
+// Console.WriteLine($"Сумма положительных элементов = {sumPositiveNegative[0]}");
+// Console.WriteLine($"Сумма отрицательных элементов = {sumPositiveNegative[1]}");
