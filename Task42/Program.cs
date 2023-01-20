@@ -23,3 +23,19 @@ string ConvertDecToBin(int num)
     }
     return res;
 }
+
+//Метод, преобразующий десятичное число в двоичное
+//через тип int 
+int ConvertDecToBinInt(int num)
+{
+    int res = 0;
+    int multiplayer = 1;
+
+    while (num != 0)
+    {
+        res = res + num % 2 * multiplayer;
+        num = num / 2;
+        multiplayer *= 10;
+    }
+    return res;
+}
