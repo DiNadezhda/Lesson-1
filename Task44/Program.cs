@@ -7,7 +7,30 @@
 Console.WriteLine("Введите число N: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-string result = ConvertDecToBin(number);
-Console.WriteLine($"Если N = {number} -> {result}");
+int[] array = GetFibonacciArray(number);
+Console.Write($"Если N = {number} -> ");
+PrintArray(array);
 
-//Метод Фибоначчи (без использования рекурсии)
+//Метод Фибоначчи (без использования рекурсии) 
+int[] GetFibonacciArray(int size)
+{
+    int[] result = new int[size];
+    result[1] = 1;
+    for (int i = 2; i < result.Length; i++)
+    {
+        result[i] = result[i - 1] + result[i - 2];
+    }
+    return result;
+}
+
+//Вывод массива в терминал
+void PrintArray(int[] arr)
+{
+    Console.Write(" ");
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (i < arr.Length - 1) Console.Write(arr[i] + " ");
+        else Console.Write(arr[i]);
+    }
+    Console.Write(" ");
+}
