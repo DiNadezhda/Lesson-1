@@ -14,7 +14,7 @@ PrintArray(array);
 ReverseArrayVerision2(array);
 PrintArray(array);
 
-//Метод, сздающий массив
+//Метод, создающий массив
 int[] CreateArrayRndInt(int size, int min, int max)
 {
     int[] arr = new int[size];
