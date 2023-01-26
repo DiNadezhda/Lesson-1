@@ -7,7 +7,7 @@ m = 3, n = 4.
 5 -2 33 -2
 77 3 8 1*/
 
-//Метод, создающий двуменый массив
+//Метод, создающий двумерный массив
 int[,] CreateMatrixRndInt(int rows, int columns, int min, int max)
 {
     int[,] matrix = new int[rows, columns]; // 0, 1

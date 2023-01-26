@@ -43,6 +43,8 @@ Console.WriteLine("Введите количество строк: ");
 int numberM = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите количество колонок: ");
 int numberN = Convert.ToInt32(Console.ReadLine());
+
 Console.WriteLine();
+
 double[,] matrixDouble = CreateMatrixRndDouble(numberM, numberN, -10, 10);
 PrintMatrixDouble(matrixDouble);
