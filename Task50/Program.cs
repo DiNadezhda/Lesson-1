@@ -11,3 +11,8 @@
 
 1, 7 -> такого элемента
 в массиве нет */
+
+Console.WriteLine("Введите i-позицию элемента: ");
+int numberM = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите j-позицию элемента: ");
+int numberN = Convert.ToInt32(Console.ReadLine());

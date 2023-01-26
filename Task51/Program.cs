@@ -31,14 +31,12 @@ int FindDiagonalIndex(int[,] matrix)
 {
     int size = matrix.GetLength(0);
     if (size > matrix.GetLength(1)) size = matrix.GetLength(1);
+    
     int sum = 0;
-    // for (int i = 0; i < matrix.GetLength(0); i++)
-    // {
-        for (int j = 0; j < size; j++)
-        {
-            sum += matrix[j,j];
-        }
-    // }
+    for (int j = 0; j < size; j++)
+    {
+        sum += matrix[j, j];
+    }
     return sum;
 }
 
@@ -60,5 +58,5 @@ void PrintMatrix(int[,] matrix)
 int[,] matrix1 = CreateMatrixRndInt(3, 4, 1, 10);
 PrintMatrix(matrix1);
 Console.WriteLine();
-int sumDiagonalIndex = FindDiagonalIndex (matrix1);
+int sumDiagonalIndex = FindDiagonalIndex(matrix1);
 Console.WriteLine(sumDiagonalIndex);
