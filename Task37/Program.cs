@@ -12,7 +12,7 @@ int[] newArray = MultiplicationOfNumbersArray(array);
 PrintArray(newArray);
 
 
-//Метод, сздающий массив
+//Метод, создающий массив
 int[] CreateArrayRndInt(int size, int min, int max)
 {
     int[] arr = new int[size];

@@ -26,9 +26,6 @@ Console.WriteLine();
 
 Console.WriteLine(RangeCheckMatrix(numberM, numberN, numRows, numColumns) == true ? matrixRndInt[numberM, numberN] : " -> Такого элемента в массиве нет");
 
-// if (RangeCheckMatrix(numberM, numberN, numRows, numColumns)) 
-// System.Console.WriteLine(matrixRndInt[numberM, numberN]);
-// else Console.WriteLine("Такого элемента в массиве нет");
 
 //Метод, создающий двумерный массив
 int[,] CreateMatrixRndInt(int rows, int columns, int min, int max)
@@ -67,7 +64,3 @@ bool RangeCheckMatrix(int m, int n, int i, int j)
     return m >= 0 && m < i && 
         n >= 0 && n < j;
 }
-
-// System.Console.WriteLine(array[0]); //Обратиться к определенному элементу массива
-// Console.WriteLine(res == 0 ? "Кратно" : $"Не кратно, остаток от деления {res}");
-
