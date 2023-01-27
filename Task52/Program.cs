@@ -9,9 +9,11 @@
 Среднее арифметическое каждого
 столбца: 4,6; 5,6; 3,6; 3. */
 
-int[,] matrixRndInt = CreateMatrixRndInt(3, 6, 1, 10);
+int[,] matrixRndInt = CreateMatrixRndInt(4, 4, 1, 10);
 PrintMatrix(matrixRndInt);
 
+Console.WriteLine();
+Console.WriteLine("Среднее арифметическое каждого столбца: ");
 PrintArray(ArithmeticMeanOfArrayColumns(matrixRndInt));
 
 //Метод, создающий двумерный массив
@@ -33,7 +35,7 @@ int[,] CreateMatrixRndInt(int rows, int columns, int min, int max)
 //Вывод двумерного массива в терминал
 void PrintMatrix(int[,] matrix)
 {
-    for (int i = 0; i < matrix.GetLength(1); i++)
+    for (int i = 0; i < matrix.GetLength(0); i++)
     {
         // Console.Write();
         for (int j = 0; j < matrix.GetLength(1); j++)
@@ -48,9 +50,9 @@ void PrintMatrix(int[,] matrix)
 //Расчёт среднего арифметического каждого столбца массива
 double[] ArithmeticMeanOfArrayColumns(int[,] matrix)
 {
-    int size = matrix.GetLength(1);
-    int rows = matrix.GetLength(0);
-    double[] arr = new double[size];
+    // int size = matrix.GetLength(1);
+    // int rows = matrix.GetLength(0);
+    double[] arr = new double[matrix.GetLength(1)];
 
     for (int i = 0; i < matrix.GetLength(1); i++)
     {
@@ -59,7 +61,7 @@ double[] ArithmeticMeanOfArrayColumns(int[,] matrix)
         {
             sum += matrix[j, i];
         }
-        arr[i] = Math.Round(sum / rows, 1);
+        arr[i] = Math.Round(sum / matrix.GetLength(0), 1);
     }
     return arr;
 }
@@ -67,7 +69,7 @@ double[] ArithmeticMeanOfArrayColumns(int[,] matrix)
 //Вывод одномерного массива в терминал
 void PrintArray(double[] arr)
 {
-    // Console.Write("[");
+    // Console.WriteLine();
     for (int i = 0; i < arr.Length; i++)
     {
         if (i < arr.Length - 1) Console.Write(arr[i] + "; ");
