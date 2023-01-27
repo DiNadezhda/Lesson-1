@@ -9,7 +9,7 @@
 Среднее арифметическое каждого
 столбца: 4,6; 5,6; 3,6; 3. */
 
-int[,] matrixRndInt = CreateMatrixRndInt(4, 4, 1, 10);
+int[,] matrixRndInt = CreateMatrixRndInt(4, 4, 1, 9);
 PrintMatrix(matrixRndInt);
 
 Console.WriteLine();
@@ -50,9 +50,7 @@ void PrintMatrix(int[,] matrix)
 //Расчёт среднего арифметического каждого столбца массива
 double[] ArithmeticMeanOfArrayColumns(int[,] matrix)
 {
-    // int size = matrix.GetLength(1);
-    // int rows = matrix.GetLength(0);
-    double[] arr = new double[matrix.GetLength(1)];
+        double[] arr = new double[matrix.GetLength(1)];
 
     for (int i = 0; i < matrix.GetLength(1); i++)
     {

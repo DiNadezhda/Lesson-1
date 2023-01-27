@@ -18,7 +18,7 @@ Console.WriteLine("Введите j-позицию элемента: ");
 int numberN = Convert.ToInt32(Console.ReadLine());
 
 int numRows = 4;
-int numColumns = 4;
+int numColumns = 3;
 int[,] matrixRndInt = CreateMatrixRndInt(numRows, numColumns, 1, 99);
 PrintMatrix(matrixRndInt);
 
@@ -46,7 +46,7 @@ int[,] CreateMatrixRndInt(int rows, int columns, int min, int max)
 //Вывод двумерного массива в терминал
 void PrintMatrix(int[,] matrix)
 {
-    for (int i = 0; i < matrix.GetLength(1); i++)
+    for (int i = 0; i < matrix.GetLength(0); i++)
     {
         Console.Write("[");
         for (int j = 0; j < matrix.GetLength(1); j++)
