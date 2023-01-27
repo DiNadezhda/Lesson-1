@@ -40,6 +40,7 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
+//Метод, меняющий местами первую и последнюю строку массива
 int[,] ChangeFirstAndLastRows(int[,] matrix)
 {
     int firstRow = 0;
