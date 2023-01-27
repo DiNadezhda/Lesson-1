@@ -9,7 +9,7 @@
 Среднее арифметическое каждого
 столбца: 4,6; 5,6; 3,6; 3. */
 
-int[,] matrixRndInt = CreateMatrixRndInt(4, 4, 1, 9);
+int[,] matrixRndInt = CreateMatrixRndInt(4, 8, 1, 9);
 PrintMatrix(matrixRndInt);
 
 Console.WriteLine();
