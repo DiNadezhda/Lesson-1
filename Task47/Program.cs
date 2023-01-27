@@ -27,7 +27,7 @@ double[,] CreateMatrixRndDouble(int rows, int columns, int min, int max)
 //Вывод двумерного массива вещественных чисел в терминал
 void PrintMatrixDouble(double[,] matrix)
 {
-    for (int i = 0; i < matrix.GetLength(1); i++)
+    for (int i = 0; i < matrix.GetLength(0); i++)
     {
         Console.Write("[");
         for (int j = 0; j < matrix.GetLength(1); j++)
